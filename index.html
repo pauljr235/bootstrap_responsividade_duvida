@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Site - Bootstrap</title>
+    <style>
+        header img{
+            height: 100px;
+            padding-right: none;
+        }
+        header li{
+            font-family: "Nabla", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+                "EDPT" 100,
+                "EHLT" 12;
+                font-size: 20px;
+        }
+        header{
+            
+            padding-bottom: 32px;
+            /* margin-top: 16px; */
+            padding-top: 0;
+            background-color: rgb(217, 249, 249);
+            background: linear-gradient(0, rgb(225, 197, 39) 20%, rgb(0, 0, 0) 30%);
+            margin-bottom: 200px;
+        }
+        header h1{
+            font-family: "Nabla", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "EDPT" 100,
+                "EHLT" 12;
+                font-size: 70px;
+                margin-left:250px;
+
+        }
+        section{
+            height: 100vh;
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: italic;
+            margin-bottom: 200px;
+
+                    }
+        section h2{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 40px;
+            margin-top: 150px;
+            font-size: 50px;
+        }
+        img {
+            display: block;
+            margin-bottom: 50px; /* Espaço entre as imagens */
+        }
+
+        header img{
+            height: 200px;
+        }
+
+        
+        .carousel-item img{
+            height: 80vh;
+            display: flex;
+            margin-left: 200px;
+            width: 70%;
+            
+        }
+        body{
+            background-color:rgb(225, 197, 39);
+        }
+
+        nav ul li{
+            background-color: black;
+        }
+
+        .post{
+            margin-bottom: 24px;
+        }
+
+        form {
+            text-align: center;
+            width: 50%;
+            margin-left: 325px;
+            padding: 16px;
+            background-color: black;
+            border-radius: 12px;
+            color: #fff;
+            
+        }
+
+        form input{
+            margin-bottom: 32px;
+        }
+
+        form textarea{
+        resize: none;
+        height: 180px;
+        }
+
+        form button{
+        border: none;
+        cursor: pointer;
+        margin-top: 16px;
+}
+
+@media screen and (max-width: 667px) {
+    .cabecalho{
+        display: block;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <img src="https://media.istockphoto.com/id/1482257470/pt/vetorial/car-repair-logo-auto-repair-logo-car-garage-car-gear-logo-car-service-logo-automobile.jpg?s=612x612&w=0&k=20&c=0R2NvC2Q3ii5neZfjIk7GChiWa2P0JfPbJaPlce4c0k=" alt="">
+            <div class="container">
+                
+                <h1>PR - AutoShop</h1>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nave-item">
+                            <a class="nav-link active " href="#categorias">Categorias</a>
+                        </li>
+                        <li class="nave-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div class="container">
+            <section id="img-intro">
+                <div class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://cdn.pixabay.com/photo/2019/12/26/22/42/car-4721367_960_720.png" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.pixabay.com/photo/2019/12/31/20/58/car-4732653_1280.png" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.pixabay.com/photo/2012/04/12/23/48/car-30990_1280.png" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.pixabay.com/photo/2013/07/12/12/45/car-146185_1280.png" alt="">
+                        </div>
+                        
+                    </div>
+
+                </div>
+        </div>
+        <section id="categorias">
+            <h2>Categorias</h2>
+            <div class="container">
+                <nav class="nav nav-tabs">
+                    <button id="botao" data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Novos</button>
+                    <button id="botao" data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Semi-Novos</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        <div class="row">
+                            <div class="col-4 post">
+                                <div class="card">
+                                    <img src="https://media.istockphoto.com/id/1307086567/pt/foto/generic-modern-suv-car-in-concrete-garage.jpg?s=2048x2048&w=is&k=20&c=j6E8DXBdYQm1grdvbcYB-5tHJnCIb7hKOfz56tU1B7Y=" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">BMW</h4>
+                                        <p class="card-text">BMW X8 40.000 km rodados</p>
+                                        <a href="#" class="btn btn-primary">Mais informações</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 post">
+                                <div class="card">
+                                    <img src="https://media.istockphoto.com/id/1307086567/pt/foto/generic-modern-suv-car-in-concrete-garage.jpg?s=2048x2048&w=is&k=20&c=j6E8DXBdYQm1grdvbcYB-5tHJnCIb7hKOfz56tU1B7Y=" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">BMW</h4>
+                                        <p class="card-text">BMW X8 40.000 km rodados</p>
+                                        <a href="#" class="btn btn-primary">Mais informações</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 post">
+                                <div class="card">
+                                    <img src="https://media.istockphoto.com/id/1307086567/pt/foto/generic-modern-suv-car-in-concrete-garage.jpg?s=2048x2048&w=is&k=20&c=j6E8DXBdYQm1grdvbcYB-5tHJnCIb7hKOfz56tU1B7Y=" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">BMW</h4>
+                                        <p class="card-text">BMW X8 40.000 km rodados</p>
+                                        <a href="#" class="btn btn-primary">Mais informações</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 post">
+                                <div class="card">
+                                    <img src="https://media.istockphoto.com/id/1307086567/pt/foto/generic-modern-suv-car-in-concrete-garage.jpg?s=2048x2048&w=is&k=20&c=j6E8DXBdYQm1grdvbcYB-5tHJnCIb7hKOfz56tU1B7Y=" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">BMW</h4>
+                                        <p class="card-text">BMW X8 40.000 km rodados</p>
+                                        <a href="#" class="btn btn-primary">Mais informações</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 post">
+                                <div class="card">
+                                    <img src="https://media.istockphoto.com/id/1307086567/pt/foto/generic-modern-suv-car-in-concrete-garage.jpg?s=2048x2048&w=is&k=20&c=j6E8DXBdYQm1grdvbcYB-5tHJnCIb7hKOfz56tU1B7Y=" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">BMW</h4>
+                                        <p class="card-text">BMW X8 40.000 km rodados</p>
+                                        <a href="#" class="btn btn-primary">Mais informações</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 post">
+                                <div class="card">
+                                    <img src="https://media.istockphoto.com/id/1307086567/pt/foto/generic-modern-suv-car-in-concrete-garage.jpg?s=2048x2048&w=is&k=20&c=j6E8DXBdYQm1grdvbcYB-5tHJnCIb7hKOfz56tU1B7Y="  alt="imagem" class="large-image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">BMW</h4>
+                                        <p class="card-text">BMW X8 40.000 km rodados</p>
+                                        <a href="#" class="btn btn-primary">Mais informações</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="tab-pane" id="aba2">
+                        <div class="row">
+                            <div class="col-4 post">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2023/04/24/10/37/car-7947765_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">BMW</h4>
+                                        <p class="card-text">BMW X8 40.000 km rodados</p>
+                                        <a href="#" class="btn btn-primary">Mais informações</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 post">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2023/04/24/10/37/car-7947765_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">BMW</h4>
+                                        <p class="card-text">BMW X8 40.000 km rodados</p>
+                                        <a href="#" class="btn btn-primary">Mais informações</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 post">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2023/04/24/10/37/car-7947765_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">BMW</h4>
+                                        <p class="card-text">BMW X8 40.000 km rodados</p>
+                                        <a href="#" class="btn btn-primary">Mais informações</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2023/04/24/10/37/car-7947765_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">BMW</h4>
+                                        <p class="card-text">BMW X8 40.000 km rodados</p>
+                                        <a href="#" class="btn btn-primary">Mais informações</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2023/04/24/10/37/car-7947765_1280.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">BMW</h4>
+                                        <p class="card-text">BMW X8 40.000 km rodados</p>
+                                        <a href="#" class="btn btn-primary">Mais informações</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <img src="https://cdn.pixabay.com/photo/2023/04/24/10/37/car-7947765_1280.jpg"  alt="imagem" class="large-image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">BMW</h4>
+                                        <p class="card-text">BMW X8 40.000 km rodados</p>
+                                        <a href="#" class="btn btn-primary">Mais informações</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+                
+        </section>
+        <section id="contato">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Entre em contato</h2>
+                        <form>
+                            <label class="form-label" for="nome">Seu nome</label>
+                            <input class="form-control" type="text" id="nome">
+                            <label class="form-label" for="email" id="email"> Digite seu e-mail</label>
+                            <input type="email" id="email" class="form-control">
+                            <label class="form-label" for="mensagem">Digite sua mensagem</label>
+                            <textarea class="form-control" id="mensagem"></textarea>
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
